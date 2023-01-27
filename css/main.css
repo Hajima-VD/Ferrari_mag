@@ -10,19 +10,16 @@ body {
   font-family: "Martel Sans", sans-serif;
   color: var(--text-wite);
 }
-
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .bg_size {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
 .header {
   background-image: url(../img/header/image_bg\ 1.jpg);
   height: 1027px;
@@ -73,7 +70,6 @@ body {
   border-radius: 50%;
   border: 1px solid #ff0000;
 }
-
 .header__content_title {
   text-align: center;
   font-weight: 400;
@@ -97,7 +93,6 @@ body {
   height: 36px;
   background: var(--bg-color-red);
 }
-
 .header__content_btn2 {
   box-sizing: border-box;
   display: flex;
@@ -110,7 +105,6 @@ body {
   height: 36px;
   border: 1px solid var(--text-wite);
 }
-
 .magazine {
   background-color: var(--color-darck);
 }
@@ -124,20 +118,12 @@ body {
   padding: 20px 0;
   margin-bottom: 80px;
 }
-.magazine__item {
-}
-.magazine__item_link {
-}
 .magazine__item_dot {
   background-color: var(--bg-color-red);
-}
-.item_dot {
 }
 .magazine__menu {
   padding: 0 20px;
   margin-bottom: 30px;
-}
-.magazine__menu_logo {
 }
 .magazine_menu_nav {
   gap: 20px;
@@ -154,10 +140,6 @@ body {
   border-radius: 30px;
   color: rgba(255, 255, 255, 0.5);
 }
-.magazine_menu_link {
-}
-.magazine_slider {
-}
 .magazine_slider_nav {
   gap: 10px;
 }
@@ -165,8 +147,6 @@ body {
   width: 349.5px;
   height: 477px;
   background: rgba(255, 255, 255, 0.1);
-}
-.magazine_slider_link {
 }
 .magazine_slider_img {
   background-repeat: no-repeat;
@@ -183,20 +163,29 @@ body {
   text-transform: uppercase;
   gap: 5px;
 }
-.magazine_slider_title {
-  white-space: nowrap;
-}
-.red{
+.red {
   color: var(--bg-color-red);
 }
-.magazine_slider_redline {
+.body_redline {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  gap: 5px;
+}
+.title {
+  white-space: nowrap;
+}
+.redline {
   border: 0.5px solid var(--bg-color-red);
   height: 1px;
   width: 100vh;
 }
-.magazine_slider_titlespan {
+.titlespan {
   white-space: nowrap;
 }
+
 .magazine_slider_text {
   margin: 0 50px;
   font-weight: 400;
@@ -207,19 +196,134 @@ body {
 }
 .magazine__footer {
   margin-top: 30px;
+  padding-bottom: 90px;
 }
 .magazine__footer_news {
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .magazine__footer_pagination {
   gap: 20px;
 }
-.magazine__footer_item {
-}
 .magazine__footer_arrow {
   transform: rotate(180deg);
 }
+.suit {
+  background-image: url(../img/suit/siut_bg.jpg);
+  min-width: 1728px;
+  min-height: 972px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.suit__logo {
+  margin: 90px 0 140px;
+}
+.suit__title {
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: 0.03em;
+text-transform: uppercase
+}
+.suit__text {
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin: 20px 0;
+}
+.suit__btn {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 30px;
+width: 194px;
+height: 39px;
+background: var(--bg-color-red);
+margin-bottom: 140px;
+}
+.suit__slaider {
+  margin-bottom: 80px;
+}
+.suit__slaider_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.suit__slaider_fashion {
+  background-image: url(../img/suit/suit_slaider1.jpg);
+  width: 604px;
+height: 282px;
+}
+.suit__slaider_fashion-discriptoin {
+  margin-top: 167px;
+  margin-left: 20px;
+}
+.suit__slaider_fashion-discriptoin h3{
+  font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin: 20px 0;
+}
+.suit__slaider_fashion-discriptoin p{font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-color-red);
+}
+.suit__slaider_watcher {
+  width: 282px;
+height: 282px;
+background-image: url(../img/suit/suit_slaider2.jpg);
+}
+
+.suit__slaider_watcher h3{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.suit__slaider_redline{
+  margin: 20px 20px;
+}
+.suit__slaider_eyewear {
+  width: 282px;
+height: 282px;
+background-image: url(../img/suit/suit_slaider3.jpg);
+}
+.suit__slaider_eyewear h3{
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+margin-left: 20px;
+
+
+}
+.suit__slaider_explore h3{
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+flex: none;
+order: 1;
+align-self: stretch;
+}
+
