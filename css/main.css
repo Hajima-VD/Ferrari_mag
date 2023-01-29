@@ -20,6 +20,12 @@ body {
   background-size: cover;
   background-position: center;
 }
+.red {
+  color: var(--bg-color-red);
+}
+.none{
+  display: none;
+}
 .header {
   background-image: url(../img/header/image_bg\ 1.jpg);
   height: 1027px;
@@ -163,9 +169,6 @@ body {
   text-transform: uppercase;
   gap: 5px;
 }
-.red {
-  color: var(--bg-color-red);
-}
 .body_redline {
   font-weight: 300;
   font-size: 16px;
@@ -222,30 +225,30 @@ body {
   margin: 90px 0 140px;
 }
 .suit__title {
-font-weight: 700;
-font-size: 48px;
-line-height: 58px;
-letter-spacing: 0.03em;
-text-transform: uppercase
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .suit__text {
-font-weight: 300;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin: 20px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 20px 0;
 }
 .suit__btn {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 30px;
-width: 194px;
-height: 39px;
-background: var(--bg-color-red);
-margin-bottom: 140px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  width: 194px;
+  height: 39px;
+  background: var(--bg-color-red);
+  margin-bottom: 140px;
 }
 .suit__slaider {
   margin-bottom: 80px;
@@ -258,21 +261,22 @@ margin-bottom: 140px;
 .suit__slaider_fashion {
   background-image: url(../img/suit/suit_slaider1.jpg);
   width: 604px;
-height: 282px;
+  height: 282px;
 }
 .suit__slaider_fashion-discriptoin {
   margin-top: 167px;
   margin-left: 20px;
 }
-.suit__slaider_fashion-discriptoin h3{
+.suit__slaider_fashion-discriptoin h3 {
   font-weight: 300;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin: 20px 0;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 20px 0;
 }
-.suit__slaider_fashion-discriptoin p{font-weight: 300;
+.suit__slaider_fashion-discriptoin p {
+  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   display: flex;
@@ -283,11 +287,10 @@ margin: 20px 0;
 }
 .suit__slaider_watcher {
   width: 282px;
-height: 282px;
-background-image: url(../img/suit/suit_slaider2.jpg);
+  height: 282px;
+  background-image: url(../img/suit/suit_slaider2.jpg);
 }
-
-.suit__slaider_watcher h3{
+.suit__slaider_watcher h3 {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -296,34 +299,138 @@ background-image: url(../img/suit/suit_slaider2.jpg);
   margin-bottom: 20px;
   margin-left: 20px;
 }
-
-.suit__slaider_redline{
+.suit__slaider_redline {
   margin: 20px 20px;
 }
 .suit__slaider_eyewear {
   width: 282px;
-height: 282px;
-background-image: url(../img/suit/suit_slaider3.jpg);
+  height: 282px;
+  background-image: url(../img/suit/suit_slaider3.jpg);
 }
-.suit__slaider_eyewear h3{
-font-weight: 300;
+.suit__slaider_eyewear h3 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.suit__slaider_explore h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+}
+
+.video {
+  background-color: var(--color-darck);
+  padding: 80px 0;
+}
+.video__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.video__item {
+  font-weight: 400;
 font-size: 24px;
 line-height: 29px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-margin-bottom: 20px;
-margin-left: 20px;
-
+}
+.hover_text {
+  opacity: 0.5;
+}
+.item__dot_red {
+  width: 5px;
+  height: 5px;
+  background-color: var(--bg-color-red);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.video__place {
+  height: 470px;
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+align-items: center;
 
 }
-.suit__slaider_explore h3{
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
+.video_btn {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 35px 10px 15px;
+width: 262px;
+height: 70px;
+background: var(--bg-color-red);
+border-radius: 50px;
+gap: 10px;
+}
+
+.video__slaider {
+  gap: 10px;
+}
+.video__slaider_item {
+  width: 432.67px;
+  height: 500px;
+}
+.video__slaider_border{
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-darck);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+.video__slaider_812gts {
+  background-image: url(../img/video/video_812.jpg);
+}
+.video__slaider_title {
+  font-weight: 700;
+font-size: 40px;
+line-height: 58px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-flex: none;
-order: 1;
-align-self: stretch;
+margin-left: 20px;
 }
-
+.video__slaider_btn {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 30px;
+gap: 10px;
+width: 253px;
+height: 36px;
+background: var(--bg-color-red);
+margin: 10px 0 20px 20px;
+}
+.video__slaider_296gts {
+   background-image: url(../img/video/video_296gts.jpg);
+}
+.video__slaider_SF90Stradale {
+   background-image: url(../img/video/video_sf90stradale.jpg);
+}
+.video__slaider_pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 20px;
+  transform: rotate(90deg);
+ 
+}
+.video_footer{
+  text-align: center;
+  margin-top: 20px;
+}
