@@ -5,6 +5,12 @@
   --bg-color: #141619;
   --bg-color-red: #ff0000;
   --color-darck: #000000;
+  --color-hover: rgba(255, 255, 255, 0.3);
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: "Martel Sans", sans-serif;
@@ -23,7 +29,7 @@ body {
 .red {
   color: var(--bg-color-red);
 }
-.none{
+.none {
   display: none;
 }
 .header {
@@ -188,7 +194,6 @@ body {
 .titlespan {
   white-space: nowrap;
 }
-
 .magazine_slider_text {
   margin: 0 50px;
   font-weight: 400;
@@ -326,7 +331,6 @@ body {
   order: 1;
   align-self: stretch;
 }
-
 .video {
   background-color: var(--color-darck);
   padding: 80px 0;
@@ -339,10 +343,10 @@ body {
 }
 .video__item {
   font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .hover_text {
   opacity: 0.5;
@@ -358,21 +362,20 @@ text-transform: uppercase;
   height: 470px;
   display: flex;
   flex-direction: row;
-justify-content: center;
-align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
 .video_btn {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 35px 10px 15px;
-width: 262px;
-height: 70px;
-background: var(--bg-color-red);
-border-radius: 50px;
-gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 35px 10px 15px;
+  width: 262px;
+  height: 70px;
+  background: var(--bg-color-red);
+  border-radius: 50px;
+  gap: 10px;
 }
 
 .video__slaider {
@@ -382,7 +385,7 @@ gap: 10px;
   width: 432.67px;
   height: 500px;
 }
-.video__slaider_border{
+.video__slaider_border {
   width: 100%;
   height: 100%;
   border: 2px solid var(--color-darck);
@@ -396,29 +399,29 @@ gap: 10px;
 }
 .video__slaider_title {
   font-weight: 700;
-font-size: 40px;
-line-height: 58px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin-left: 20px;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 20px;
 }
 .video__slaider_btn {
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 30px;
-gap: 10px;
-width: 253px;
-height: 36px;
-background: var(--bg-color-red);
-margin: 10px 0 20px 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  width: 253px;
+  height: 36px;
+  background: var(--bg-color-red);
+  margin: 10px 0 20px 20px;
 }
 .video__slaider_296gts {
-   background-image: url(../img/video/video_296gts.jpg);
+  background-image: url(../img/video/video_296gts.jpg);
 }
 .video__slaider_SF90Stradale {
-   background-image: url(../img/video/video_sf90stradale.jpg);
+  background-image: url(../img/video/video_sf90stradale.jpg);
 }
 .video__slaider_pagination {
   display: flex;
@@ -428,9 +431,131 @@ margin: 10px 0 20px 20px;
   padding: 0;
   gap: 20px;
   transform: rotate(90deg);
- 
 }
-.video_footer{
+.video_footer {
   text-align: center;
   margin-top: 20px;
+}
+.discover {
+  background-color: var(--color-darck);
+}
+.discover_separator {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-hover);
+  margin-bottom: 80px;
+}
+.discover_gallery_item {
+  width: 349.5px;
+  height: 277px;
+}
+.discover_gallery_bg {
+  width: 349.5px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+.Pre-owned {
+  display: flex;
+  flex-direction: column;
+  width: 349.5px;
+  height: 477px;
+}
+.discover_gallery_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-color-red);
+  margin-left: 40px;
+}
+.discover_gallery_title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+.discover_gallery_link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.pastmodels {
+  width: 349.5px;
+  height: 477px;
+  display: flex;
+  flex-direction: column;
+}
+.finali {
+  width: 709px;
+  height: 477px;
+  background-image: url(../img/discover/discover_dg3.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+.discover_gallery_finalibg {
+  background: rgba(0, 0, 0, 0.5);
+  width: 349.5px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+.discover_gallery_linkred {
+  margin: 40px;
+  color: var(--bg-color-red);
+}
+.subscrible {
+  background-color: var(--color-darck);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscrible__bg {
+  background-color: #222222;
+  height: 120px;
+  margin: 80px 0;
+  width: 100%;
+}
+.subscrible_body {
+  margin: 41px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.subscrible_title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.btn {
+  background-color: #222222;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  width: 147px;
+  height: 39px;
+  border: 1px solid #ffffff;
 }
