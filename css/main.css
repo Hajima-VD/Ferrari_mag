@@ -559,11 +559,8 @@ body {
   height: 39px;
   border: 1px solid #ffffff;
 }
-
 .footer {
   background-color: var(--color-darck);
-}
-.container {
 }
 .footer__body {
   padding: 80px 0;
@@ -601,10 +598,6 @@ body {
   gap: 40px;
   padding: 30px 0;
 }
-.footer__social_link {
-}
-.footer__social_img {
-}
 .footer_rights {
   text-align: center;
   padding: 40px 0;
@@ -641,5 +634,4 @@ body {
   gap: 10px;
   margin-left: 130px;
 }
-.down_link_flag {
-}
+
