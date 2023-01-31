@@ -15,6 +15,7 @@ li {
 body {
   font-family: "Martel Sans", sans-serif;
   color: var(--text-wite);
+  background-color: var(--color-darck);
 }
 .flex {
   display: flex;
@@ -33,8 +34,14 @@ body {
   display: none;
 }
 .header {
-  background-image: url(../img/header/image_bg\ 1.jpg);
-  height: 1027px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.header__img {
+  position: absolute;
+  width: 100vw;
+  min-width: 100vw;
+  z-index: -1;
 }
 .container {
   max-width: 1450px;
@@ -42,8 +49,8 @@ body {
   padding: 0 10px;
 }
 .header__menu {
-  margin-bottom: 570px;
   padding: 20px 10px;
+  margin-bottom: 670px;
 }
 .header__content_nav {
   position: relative;
@@ -55,9 +62,13 @@ body {
   content: "";
   background: var(--text-wite);
   height: 2px;
-  width: 1028px;
+  width: 100%;
   bottom: -30px;
   left: 0;
+}
+.header__content_logoname {
+  height: 100%;
+  width: 100%;
 }
 .header__content_pagination {
   gap: 20px;
@@ -117,8 +128,37 @@ body {
   height: 36px;
   border: 1px solid var(--text-wite);
 }
+@media (max-width: 1181px) {
+  .header__menu {
+    margin-bottom: 470px;
+  }
+  .header__content_title {
+    font-size: 66px;
+  }
+}
+@media (max-width: 470px) {
+  .header__menu {
+    margin-bottom: 200px;
+  }
+  .header__content_title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .header__content_btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header__img {
+    top: 30px;
+  }
+  .header__content_nav {
+    flex-direction: column;
+  }
+}
 .magazine {
   background-color: var(--color-darck);
+  padding-top: 40px;
 }
 .magazine__nav {
   display: flex;
@@ -219,12 +259,61 @@ body {
 .magazine__footer_arrow {
   transform: rotate(180deg);
 }
+@media (max-width: 1181px) {
+  .magazine__slider4 {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  .magazine__slider3 {
+    display: none;
+  }
+  .magazine__menu {
+    flex-direction: column;
+  }
+  .magazine_menu_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 470px) {
+  .magazine_slider_nav {
+    flex-direction: column;
+  }
+  .magazine__slider2 {
+    display: none;
+  }
+  .magazine__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 0;
+    margin-bottom: 80px;
+  }
+}
+
 .suit {
-  background-image: url(../img/suit/siut_bg.jpg);
-  min-width: 1728px;
-  min-height: 972px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+}
+.suit__img_bg {
+  position: absolute;
+  width: 100vw;
+  min-width: 100vw;
+  z-index: -1;
 }
 .suit__logo {
   margin: 90px 0 140px;
@@ -257,6 +346,7 @@ body {
 }
 .suit__slaider {
   margin-bottom: 80px;
+  gap: 10px;
 }
 .suit__slaider_item {
   display: flex;
@@ -271,6 +361,9 @@ body {
 .suit__slaider_fashion-discriptoin {
   margin-top: 167px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .suit__slaider_fashion-discriptoin h3 {
   font-weight: 300;
@@ -284,8 +377,6 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--bg-color-red);
@@ -331,6 +422,133 @@ body {
   order: 1;
   align-self: stretch;
 }
+.suit__slaider_body {
+  gap: 10px;
+  justify-content: flex-start;
+}
+@media (max-width: 1600px) {
+  .suit__logo {
+    margin: 45px 0 70px;
+  }
+
+  .suit__btn {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1360px) {
+  .suit__slaider_eyewear {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/suit/suit_slaider3.jpg);
+  }
+
+  .suit__slaider_watcher {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/suit/suit_slaider2.jpg);
+  }
+
+  .suit__slaider_fashion {
+    background-image: url(../img/suit/suit_slaider1.jpg);
+    width: 400px;
+    height: 200px;
+  }
+
+  .suit__slaider_fashion-discriptoin {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+@media (max-width: 1181px) {
+  .suit__slaider_eyewear {
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/suit/suit_slaider3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .suit__slaider_watcher {
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/suit/suit_slaider2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .suit__slaider_fashion {
+    background-image: url(../img/suit/suit_slaider1.jpg);
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .suit__slaider_fashion-discriptoin {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .suit__slaider_eyewear {
+    display: none;
+  }
+  .suit__slaider {
+    gap: 20px;
+  }
+  .suit__logo {
+    margin: 120px 0 70px;
+  }
+
+  .suit__btn {
+    margin-bottom: 180px;
+  }
+}
+@media (max-width: 950px) {
+  .suit__slaider_eyewear {
+    display: block;
+  }
+  .suit__slaider {
+    flex-direction: column;
+  }
+  .suit__slaider_body {
+    flex-direction: column;
+  }
+  .suit__slaider_btnarrow {
+    rotate: 90deg;
+  }
+  .suit__slaider_explore {
+    text-align: center;
+  }
+}
+@media (max-width: 770px) {
+  .suit__logo {
+    margin: 20px 0 20px;
+  }
+
+  .suit__btn {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 520px) {
+  .suit__logo {
+    margin: 20px 0 20px;
+  }
+
+  .suit__btn {
+    margin-bottom: 70px;
+  }
+}
+
 .video {
   background-color: var(--color-darck);
   padding: 80px 0;
@@ -359,7 +577,11 @@ body {
   border-radius: 50%;
 }
 .video__place {
-  height: 470px;
+  margin: 15px 0;
+  border: 2px solid var(--bg-color-red);
+  min-height: 470px;
+  min-height: 470px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -435,6 +657,22 @@ body {
 .video_footer {
   text-align: center;
   margin-top: 20px;
+}
+@media (max-width: 1000px) {
+  .video__slaider_SF90Stradale {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .video__slaider_SF90Stradale {
+    display: block;
+  }
+  .video__slaider {
+    flex-direction: column;
+  }
+  .video__slaider_pagination {
+    transform: rotate(0deg);
+  }
 }
 .discover {
   background-color: var(--color-darck);
@@ -516,6 +754,16 @@ body {
   margin: 40px;
   color: var(--bg-color-red);
 }
+
+@media (max-width: 1181px) {
+  .discover_gallery {
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: space-between;
+    justify-content: center;
+    gap: 10px;
+  }
+}
 .subscrible {
   background-color: var(--color-darck);
   display: flex;
@@ -567,6 +815,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 .footer__body_card {
   display: flex;
@@ -617,6 +870,11 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 50px 0;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 .down_link {
   font-weight: 400;
@@ -634,4 +892,3 @@ body {
   gap: 10px;
   margin-left: 130px;
 }
-
