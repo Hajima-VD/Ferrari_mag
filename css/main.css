@@ -16,6 +16,7 @@ body {
   font-family: "Martel Sans", sans-serif;
   color: var(--text-wite);
   background-color: var(--color-darck);
+  scroll-behavior: smooth;
 }
 .flex {
   display: flex;
@@ -33,15 +34,96 @@ body {
 .none {
   display: none;
 }
+.top {
+  scroll-behavior: smooth;
+}
 .header {
   position: relative;
   margin-bottom: 40px;
 }
-.header__img {
+.header__img-all {
   position: absolute;
   width: 100vw;
   min-width: 100vw;
   z-index: -1;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.header__img {
+  width: 100vw;
+  min-width: 100vw;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
+.mobile-nav-button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+  position: relative;
+  z-index: 999;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav-button__icon {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 3px;
+  background-color: var(--text-wite);
+}
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: var(--text-wite);
+  transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+.mobile-nav-button__icon::after {
+  left: 0;
+  top: -10px;
+}
+.mobile-nav-button__icon::before {
+  left: 0;
+  top: 10px;
+}
+.mobile-nav-button__icon.active {
+  background-color: transparent;
+}
+.mobile-nav-button__icon.active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+.mobile-nav-button__icon.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+.show {
+  display: block;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .container {
   max-width: 1450px;
@@ -49,8 +131,25 @@ body {
   padding: 0 10px;
 }
 .header__menu {
-  padding: 20px 10px;
-  margin-bottom: 670px;
+  padding: 20px 8%;
+  position: fixed;
+  left: 0px;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header__menu_btns {
+  position: fixed;
+  flex-direction: column;
+  right: 8%;
+  top: 70px;
+}
+.header__place {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 700px;
+}
+.header__content {
 }
 .header__content_nav {
   position: relative;
@@ -128,12 +227,18 @@ body {
   height: 36px;
   border: 1px solid var(--text-wite);
 }
+.header__content_btn2:hover {
+  background-color: var(--bg-color-red);
+}
 @media (max-width: 1181px) {
   .header__menu {
     margin-bottom: 470px;
   }
   .header__content_title {
     font-size: 66px;
+  }
+  .header__img {
+    height: auto;
   }
 }
 @media (max-width: 470px) {

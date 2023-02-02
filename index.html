@@ -15,12 +15,26 @@
 
 <body>
     <div class="header ">
-        <img src="./img/header/image_bg 1.jpg" alt="" class="header__img ">
+        <div class="header__img-all">
+            <img src="./img/header/image_bg 1.jpg" alt="" class="header__img none">
+            <img src="./img/header/Idzusan_ferrari1.jpg" alt="" class="header__img ">
+            <img src="./img/header/Idzusan_ferrari_yellow.png" alt="" class="header__img none">
+        </div>
         <div class="container ">
             <div class="header__menu flex">
                 <img src="./img/header/logo.svg" alt="logo" class="header__menu_logo">
-                <img src="./img/header/Frame 2.svg" alt="img" class="header__menu_burger">
+                <button type="button" class="mobile-nav-button">
+                    <span class="mobile-nav-button__icon"></span>
+                </button>
+                <img src="./img/header/Frame 2.svg" alt="img" class="header__menu_burger none">
             </div>
+            <div class="header__menu_btns flex ">
+                <a href="" class="header__content_btn2">one</a>
+                <a href="" class="header__content_btn2">two</a>
+                <a href="" class="header__content_btn2">three</a>
+                <a href="" class="header__content_btn2">thour</a>
+            </div>
+            <div class="header__place"></div>
             <div class="header__content">
                 <div class="header__content_nav flex">
                     <a href="#" class="header__content_logo">
@@ -402,6 +416,7 @@
         <a href="" class="down_link_country flex">CHOOSE YOUR COUNTRY<img src="./img/footer/flag.svg" alt=""
                 class="down_link_flag"></a>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
