@@ -131,25 +131,23 @@ body {
   padding: 0 10px;
 }
 .header__menu {
-  padding: 20px 8%;
+  padding: 20px 10%;
   position: fixed;
   left: 0px;
   right: 0;
   width: 100%;
   z-index: 1000;
 }
-.header__menu_btns{
+.header__menu_btns {
   position: fixed;
   flex-direction: column;
-  right: 8%;
+  right: 10%;
   top: 70px;
 }
 .header__place {
   width: 100%;
   height: 1px;
-  margin-bottom: 700px;
-}
-.header__content {
+  margin-bottom: 70vh;
 }
 .header__content_nav {
   position: relative;
@@ -226,15 +224,11 @@ body {
   width: 133px;
   height: 36px;
   border: 1px solid var(--text-wite);
-  
 }
-.header__content_btn2:hover{
+.header__content_btn2:hover {
   background-color: var(--bg-color-red);
 }
 @media (max-width: 1181px) {
-  .header__menu {
-    margin-bottom: 470px;
-  }
   .header__content_title {
     font-size: 66px;
   }
@@ -243,9 +237,6 @@ body {
   }
 }
 @media (max-width: 470px) {
-  .header__menu {
-    margin-bottom: 200px;
-  }
   .header__content_title {
     font-size: 30px;
     line-height: 30px;
@@ -299,6 +290,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .magazine_slider_nav {
+  flex-wrap: wrap;
   gap: 10px;
 }
 .magazine_slider_item {
@@ -654,6 +646,21 @@ body {
     margin-bottom: 70px;
   }
 }
+@media (max-width: 400px) {
+  .suit__slaider_eyewear {
+    width: 300px;
+    height: 300px;
+  }
+  .suit__slaider_watcher {
+    width: 300px;
+    height: 300px;
+  }
+
+  .suit__slaider_fashion {
+    width: 300px;
+    height: 300px;
+  }
+}
 
 .video {
   background-color: var(--color-darck);
@@ -778,6 +785,10 @@ body {
   }
   .video__slaider_pagination {
     transform: rotate(0deg);
+  }
+  .video__slaider_item {
+    width: 350px;
+    height: 500px;
   }
 }
 .discover {
@@ -949,6 +960,7 @@ body {
   letter-spacing: 0.03em;
 }
 .footer__social {
+  flex-wrap: wrap;
   border-bottom: 2px solid var(--color-hover);
   border-top: 2px solid var(--color-hover);
   display: flex;
@@ -974,7 +986,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
   padding: 50px 0;
   flex-wrap: wrap;
   height: 100%;
@@ -997,4 +1008,14 @@ body {
   text-transform: uppercase;
   gap: 10px;
   margin-left: 130px;
+}
+
+@media (max-width: 700px) {
+  .subscrible_title {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  .down_link_country {
+    margin-left: 0;
+  }
 }
