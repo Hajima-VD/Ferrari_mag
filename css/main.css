@@ -528,7 +528,7 @@ body {
   background-image: url(../img/suit/suit_slaider3.jpg);
 }
 .suit__slaider_eyewear h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.03em;
@@ -623,9 +623,7 @@ body {
     align-items: flex-start;
     justify-content: center;
   }
-  .suit__slaider_eyewear {
-    display: none;
-  }
+ 
   .suit__slaider {
     gap: 20px;
   }
@@ -638,9 +636,7 @@ body {
   }
 }
 @media (max-width: 950px) {
-  .suit__slaider_eyewear {
-    display: block;
-  }
+ 
   .suit__slaider {
     flex-direction: column;
   }
