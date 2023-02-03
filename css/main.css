@@ -32,6 +32,7 @@ body {
   color: var(--bg-color-red);
 }
 .none {
+  opacity: 0;
   display: none;
 }
 .top {
@@ -139,10 +140,19 @@ body {
   z-index: 1000;
 }
 .header__menu_btns {
+  z-index: 1000;
   position: fixed;
   flex-direction: column;
   right: 10%;
   top: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 2px solid var(--text-wite);
+  opacity: 1;
+  transition: opacity 1s;
 }
 .header__place {
   width: 100%;
@@ -213,6 +223,10 @@ body {
   height: 36px;
   background: var(--bg-color-red);
 }
+.header__content_btn:hover {
+  background: var(--color-darck);
+  border: 1px solid var(--text-wite);
+}
 .header__content_btn2 {
   box-sizing: border-box;
   display: flex;
@@ -224,6 +238,7 @@ body {
   width: 133px;
   height: 36px;
   border: 1px solid var(--text-wite);
+  transition: background-color 0.3s;
 }
 .header__content_btn2:hover {
   background-color: var(--bg-color-red);
@@ -267,6 +282,9 @@ body {
   padding: 20px 0;
   margin-bottom: 80px;
 }
+.magazine__item:hover {
+  color: var(--bg-color-red);
+}
 .magazine__item_dot {
   background-color: var(--bg-color-red);
 }
@@ -288,6 +306,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 30px;
   color: rgba(255, 255, 255, 0.5);
+}
+.magazine_menu_item:hover {
+  color: var(--text-wite);
+  border: 1px solid var(--text-wite);
 }
 .magazine_slider_nav {
   flex-wrap: wrap;
@@ -411,7 +433,7 @@ body {
   position: absolute;
   width: 100vw;
   min-width: 100vw;
-  z-index: -1;
+  z-index: -10;
 }
 .suit__logo {
   margin: 90px 0 140px;
@@ -441,6 +463,10 @@ body {
   height: 39px;
   background: var(--bg-color-red);
   margin-bottom: 140px;
+}
+.suit__btn:hover{
+  border: 1px solid var(--text-wite);
+ 
 }
 .suit__slaider {
   margin-bottom: 80px;
@@ -690,17 +716,21 @@ body {
   border-radius: 50%;
 }
 .video__place {
+  position: relative;
   margin: 15px 0;
   border: 2px solid var(--bg-color-red);
-  min-height: 470px;
-  min-height: 470px;
-
+  min-height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+.video__object{
+  max-width: 100%;
+  height: auto;
+}
 .video_btn {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -711,6 +741,19 @@ body {
   background: var(--bg-color-red);
   border-radius: 50px;
   gap: 10px;
+  border: 1px solid var(--text-wite);
+  cursor: pointer;
+  color: var(--text-wite);
+  opacity: 1;
+  transition: opacity 2s;
+}
+.hiden{
+  opacity: 0;
+}
+
+.video_btn:hover {
+  background: var(--color-darck);
+  border: 1px solid var(--text-wite);
 }
 
 .video__slaider {

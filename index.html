@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="header ">
+    <div class="header " id="Main">
         <div class="header__img-all">
             <img src="./img/header/image_bg 1.jpg" alt="" class="header__img none">
             <img src="./img/header/Idzusan_ferrari1.jpg" alt="" class="header__img ">
@@ -28,11 +28,12 @@
                 </button>
                 <img src="./img/header/Frame 2.svg" alt="img" class="header__menu_burger none">
             </div>
-            <div class="header__menu_btns none ">
-                <a href="" class="header__content_btn2">one</a>
-                <a href="" class="header__content_btn2">two</a>
-                <a href="" class="header__content_btn2">three</a>
-                <a href="" class="header__content_btn2">thour</a>
+            <div class="header__menu_btns hiden ">
+                <a href="#Main" class="header__content_btn2">Main</a>
+                <a href="#AUTO" class="header__content_btn2">AUTO</a>
+                <a href="#STORE" class="header__content_btn2">STORE</a>
+                <a href="#RACING" class="header__content_btn2">RACING</a>
+                <a href="#SUBSCRIBE" class="header__content_btn2">SUBSCRIBE</a>
             </div>
             <div class="header__place"></div>
             <div class="header__content">
@@ -54,20 +55,20 @@
             </div>
         </div>
     </div>
-    <section class="magazine ">
+    <section class="magazine " id="AUTO">
         <div class="container">
             <ul class="magazine__nav">
                 <li class="magazine__item ">
-                    <a href="" class="magazine__item_link">AUTO</a>
+                    <a href="#AUTO" class="magazine__item_link">AUTO</a>
                 </li>
                 <li class="magazine__item_dot item__dot "> </li>
                 <li class=" magazine__item">
-                    <a href="" class="magazine__item_link">RACING</a>
+                    <a href="#RACING" class="magazine__item_link">RACING</a>
                 </li>
                 <li class="magazine__item_dot item__dot ">
                 </li>
                 <li class="magazine__item">
-                    <a href="" class="magazine__item_link">STORE</a>
+                    <a href="#STORE" class="magazine__item_link">STORE</a>
                 </li>
             </ul>
             <div class="magazine__menu flex">
@@ -171,9 +172,9 @@
             </div>
         </div>
     </section>
-    <section class="suit ">
-        <img src="./img/suit/siut_bg.jpg" alt="" class="suit__img_bg">
-        <div class="container ">
+    <section class="suit" id="STORE">
+        <img src="./img/suit/siut_bg.jpg" alt="" class="suit__img_bg flex">
+        <div class="container">
             <img src="./img/suit/suit-logo.svg" alt="logo" class="suit__logo">
             <h2 class="suit__title">The Ferrari Suit</h2>
             <p class="suit__text">top style and top performance, <br> for life in pole position</p>
@@ -211,7 +212,7 @@
             </div>
         </div>
     </section>
-    <section class="video">
+    <section class="video" id="RACING">
         <div class="container">
             <ul class="video__menu">
                 <li class="video__item hover_text">AUTO</li>
@@ -219,8 +220,13 @@
                 <li class="video__item">RACING</li>
             </ul>
             <div class="video__place">
-                <a href="" class="video_btn"><img src="./img/video/video_btn.svg" alt="img" class="video_btn_img"> WATCH
-                    THE VIDEO</a>
+                <video class="video__object" id="video__play">
+                    <source src="./video/pexels-taryn-elliott-5309380.mp4" type="video/mp4">
+                </video>
+                <button  class="video_btn ">
+                    <img width="52" height="52" src="./img/video/video_btn.svg" alt="img" class="video_btn_img">
+                    WATCH THE VIDEO
+                </button>
             </div>
             <ul class="video__slaider flex">
                 <li class="video__slaider_item  video__slaider_812gts">
@@ -291,7 +297,7 @@
             </div>
         </div>
     </section>
-    <section class="subscrible ">
+    <section class="subscrible " id="SUBSCRIBE">
         <div class="subscrible__bg">
             <div class="container">
                 <div class="subscrible_body">

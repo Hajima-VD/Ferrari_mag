@@ -6,12 +6,18 @@ window.addEventListener("DOMContentLoaded", () => {
   const mobileNavButton = document.querySelector(".mobile-nav-button");
   const mobileNavIconn = document.querySelector(".mobile-nav-button__icon");
   const headerMenuBtns = document.querySelector(".header__menu_btns");
+  const videoBtn = document.querySelector(".video_btn");
+  const videoBtnImg = document.querySelector(".video_btn_img");
+  const videoPlay = document.querySelector("#video__play");
+  const videoPlace = document.querySelector(".video__place");
 
+  // =====================budrgermenu===============//
   mobileNavButton.addEventListener("click", function () {
     mobileNavIconn.classList.toggle("active");
-    headerMenuBtns.classList.toggle("none");
+    headerMenuBtns.classList.toggle("hiden");
   });
 
+  // =====================headerBgSlaider===============//
   function hideTabContent() {
     headerBG.forEach((item) => {
       //item.style.display ='none';
@@ -22,7 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
       item.classList.remove("item__dot_hover");
     });
   }
-
   function showTabContent(i = 0) {
     headerBG[i].classList.add("show", "fade");
     headerBG[i].classList.remove("none");
@@ -39,6 +44,29 @@ window.addEventListener("DOMContentLoaded", () => {
           showTabContent(i);
         }
       });
+    }
+  });
+  // =====================Video===============//
+  videoPlace.addEventListener("click", () => {
+    function ToggleShowBtn(event) {
+      if (event.type === "mouseleave") {
+        videoBtn.classList.add("hiden");
+      } else {
+        videoBtn.classList.remove("hiden");
+      }
+    }
+    if (videoPlay.paused) {
+      videoPlay.play();
+      videoBtnImg.src = "./img/video/pause-button-icon.svg";
+      videoPlace.onmouseleave = ToggleShowBtn;
+      videoPlace.onmouseenter = ToggleShowBtn;
+      videoBtn.classList.add("hiden");
+    } else {
+      videoPlay.pause();
+      videoBtnImg.src = "./img/video/video_btn.svg";
+      videoBtn.classList.remove("hiden");
+      videoPlace.onmouseleave = null;
+      videoPlace.onmouseenter = null;
     }
   });
 });
