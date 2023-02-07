@@ -10,7 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Ferrari</title>
+
+
 </head>
 
 <body>
@@ -88,9 +101,10 @@
                     </li>
                 </ul>
             </div>
+
             <div class="magazine_slider ">
-                <ul class="magazine_slider_nav flex">
-                    <li class="magazine_slider_item">
+                <div class="magazine_slider_nav owl-carousel  ">
+                    <div class="magazine_slider_item">
                         <a href="" class="magazine_slider_link">
                             <img src="./img/magazin/magazine_slader1.jpg" alt="img" class="magazine_slider_img">
                             <div class="magazine_slider_pasion body_redline flex">
@@ -103,8 +117,8 @@
                                 THE OFFICIAL FERRARI MAGAZINE : ISSUE 35
                             </P>
                         </a>
-                    </li>
-                    <li class="magazine_slider_item magazine__slider2">
+                    </div>
+                    <div class="magazine_slider_item magazine__slider2">
                         <a href="" class="magazine_slider_link">
                             <img src="./img/magazin/magazine_slader2.jpg" alt="img" class="magazine_slider_img">
                             <div class="magazine_slider_pasion body_redline flex">
@@ -116,8 +130,8 @@
                                 A TRIBUTE TO THE TARGA
                             </P>
                         </a>
-                    </li>
-                    <li class="magazine_slider_item magazine__slider3">
+                    </div>
+                    <div class="magazine_slider_item magazine__slider3">
                         <a href="" class="magazine_slider_link">
                             <img src="./img/magazin/magazine_slader3.jpg" alt="img" class="magazine_slider_img">
                             <div class="magazine_slider_pasion body_redline flex">
@@ -129,8 +143,8 @@
                                 Modern classics
                             </P>
                         </a>
-                    </li>
-                    <li class="magazine_slider_item magazine__slider4">
+                    </div>
+                    <div class="magazine_slider_item magazine__slider4">
                         <a href="" class="magazine_slider_link">
                             <img src="./img/magazin/magazine_slader4.jpg" alt="img" class="magazine_slider_img">
                             <div class="magazine_slider_pasion body_redline flex">
@@ -142,8 +156,8 @@
                                 Racing back through time
                             </P>
                         </a>
-                    </li>
-                    <li class="magazine_slider_item none">
+                    </div>
+                    <div class="magazine_slider_item ">
                         <a href="" class="magazine_slider_link">
                             <img src="./img/magazin/magazine_slader5.jpg" alt="img" class="magazine_slider_img">
                             <div class="magazine_slider_pasion flex">
@@ -155,18 +169,22 @@
                                 MARCH OF THE CLASSICS
                             </P>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <div class="magazine__footer red flex">
                 <a href="" class="magazine__footer_news ">View all news</a>
                 <div class="magazine__footer_pagination">
                     <ul class="magazine__footer_pagination flex">
-                        <img src="./img/magazin/magazine_btn_arr.svg" alt="img" class="magazine__footer_arrow">
+                        <div class="customNextBtn">
+                            <img src="./img/magazin/magazine_btn_arr.svg" alt="img" class="magazine__footer_arrow">
+                        </div>
                         <li class="magazine__footer_item item__dot item__dot_hover"></li>
                         <li class="magazine__footer_item item__dot"></li>
                         <li class="magazine__footer_item item__dot"></li>
-                        <img src="./img/magazin/magazine_btn_arr.svg" alt="img" class="magazine__footer_arrowright">
+                        <div class="customPrevBtn">
+                            <img src="./img/magazin/magazine_btn_arr.svg" alt="img" class="magazine__footer_arrowright">
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -223,7 +241,7 @@
                 <video class="video__object" id="video__play">
                     <source src="./video/pexels-taryn-elliott-5309380.mp4" type="video/mp4">
                 </video>
-                <button  class="video_btn ">
+                <button class="video_btn ">
                     <img width="52" height="52" src="./img/video/video_btn.svg" alt="img" class="video_btn_img">
                     WATCH THE VIDEO
                 </button>
@@ -423,6 +441,12 @@
                 class="down_link_flag"></a>
     </div>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

@@ -380,14 +380,8 @@ body {
   transform: rotate(180deg);
 }
 @media (max-width: 1181px) {
-  .magazine__slider4 {
-    display: none;
-  }
 }
 @media (max-width: 770px) {
-  .magazine__slider3 {
-    display: none;
-  }
   .magazine__menu {
     flex-direction: column;
   }
@@ -411,9 +405,7 @@ body {
   .magazine_slider_nav {
     flex-direction: column;
   }
-  .magazine__slider2 {
-    display: none;
-  }
+
   .magazine__nav {
     display: flex;
     justify-content: center;
@@ -464,9 +456,8 @@ body {
   background: var(--bg-color-red);
   margin-bottom: 140px;
 }
-.suit__btn:hover{
+.suit__btn:hover {
   border: 1px solid var(--text-wite);
- 
 }
 .suit__slaider {
   margin-bottom: 80px;
@@ -623,7 +614,7 @@ body {
     align-items: flex-start;
     justify-content: center;
   }
- 
+
   .suit__slaider {
     gap: 20px;
   }
@@ -636,7 +627,6 @@ body {
   }
 }
 @media (max-width: 950px) {
- 
   .suit__slaider {
     flex-direction: column;
   }
@@ -721,7 +711,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.video__object{
+.video__object {
   max-width: 100%;
   height: auto;
 }
@@ -743,7 +733,7 @@ body {
   opacity: 1;
   transition: opacity 2s;
 }
-.hiden{
+.hiden {
   opacity: 0;
 }
 
