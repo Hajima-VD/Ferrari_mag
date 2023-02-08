@@ -743,7 +743,14 @@ body {
 }
 
 .video__slaider {
-  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.video__slaider_carousel{
+  gap: 20px;
+  max-width: 1250px;
+
 }
 .video__slaider_item {
   width: 432.67px;
@@ -757,6 +764,8 @@ body {
   flex-direction: column;
   justify-content: end;
   align-items: flex-start;
+  
+  
 }
 .video__slaider_812gts {
   background-image: url(../img/video/video_812.jpg);
@@ -768,6 +777,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-left: 20px;
+  white-space: normal;
 }
 .video__slaider_btn {
   display: flex;
@@ -786,6 +796,12 @@ body {
 }
 .video__slaider_SF90Stradale {
   background-image: url(../img/video/video_sf90stradale.jpg);
+}
+.video__slaider_item4{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/video/1972-Feerrari-Dino-19.jpg);
 }
 .video__slaider_pagination {
   display: flex;

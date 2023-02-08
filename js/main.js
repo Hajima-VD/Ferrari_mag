@@ -69,12 +69,14 @@ window.addEventListener("DOMContentLoaded", () => {
       videoPlace.onmouseenter = null;
     }
   });
+  // =====================owlCarousel===============//
+
   const owl = $(".owl-carousel");
   const windowInnerWidth = window.innerWidth;
-  let a = 4;
+  let a;
   function SetItems() {
     if (windowInnerWidth > 400) {
-      a = 4;
+      a = 3;
     } else {
       a = 1;
     }
@@ -83,7 +85,6 @@ window.addEventListener("DOMContentLoaded", () => {
   owl.owlCarousel({
     items: a,
     loop: true,
-    slideBy: 4,
   });
   // Go to the next item
   $(".customNextBtn").click(function () {
@@ -91,8 +92,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   // Go to the previous item
   $(".customPrevBtn").click(function () {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
     owl.trigger("prev.owl.carousel", [300]);
   });
+
+
 });
